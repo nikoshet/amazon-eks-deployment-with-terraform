@@ -53,7 +53,7 @@ mv ./kubectl /usr/local/bin/kubectl
 * Get the EKS configuration file
 ```
 #rm -rf ~/.kube/config
-mv ~/.kube/config_temp
+mv ~/.kube/config ~/.kube/config_temp
 aws eks update-kubeconfig --name eks-cluster --region eu-central-1
 ```
 * Now you can interact with the cluster
